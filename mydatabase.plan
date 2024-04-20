@@ -1,0 +1,10 @@
+%syntax-version=1.0.0
+%project=sqitch-snowflake
+%uri=https://github.com/g-anish/sqitch-snowflake
+
+schemas/dairy/tables/list 2024-04-19T16:39:43Z anishg <g-anish@example.com> # Add dairy.list table
+schemas/dairy/tables/product 2024-04-19T16:42:48Z anishg <g-anish@example.com> # Add dairy.product table
+@v1.0.0-dev 2024-04-19T16:51:16Z anishg <g-anish@example.com> # Tag v1.0.0-dev.
+schemas/dairy/tables/list [schemas/dairy/tables/list@v1.0.0-dev] 2024-04-19T16:58:42Z anishg <g-anish@example.com> # add new column
+@v1.0.1-dev 2024-04-19T17:04:38Z anishg <g-anish@example.com> # Tag v1.0.1-dev.
+schemas/dairy/tables/list [schemas/dairy/tables/list@v1.0.1-dev] 2024-04-19T17:08:12Z anishg <g-anish@example.com> # drop a column and verify change
